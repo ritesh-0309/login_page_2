@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav{
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    box-shadow: 0 0 50px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    background: #e0edfe;
+}
+
+nav .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.container form{
+    border-radius: 25px;
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-container{
+    color: #020c67;
+    margin: 5% 10%;
+}
+
+.form-container h1{
+    font-size: clamp(2.5rem, 1rem + 5vw, 4rem);
+}
+
+.form-container p{
+    margin-top: 10px;
+    font-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
+}
+
+.form-container .inputs{
+    width: 100%;
+    height: 6vh;
+    margin: 10px 0;
+}
+
+.form-container .inputs input{
+    border: 1px solid #020c67;
+    border-radius: 5px;
+    outline-color: #020c67;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+.form-container .remfor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.remfor .forget a{
+    color: #020c67;
+    text-decoration: none;
+}
+
+.form-container button{
+    background-color: #2281ff;
+    width: 100%;
+    height: 6vh;
+    font-size: 1.8rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 30px 0;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+
+.form-container button:hover{
+    color: #2281ff;
+    box-shadow:0 0 10px #2281ff;
+    background-color: transparent;
+    border: 2px solid #2281ff;
+}
+
+.form-container .sign{
+    text-align: center;
+}
+
+.form-container .social-icons{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin: 5% 0;
+}
+
+.social-icons div{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    transition: 0.3s linear;    
+}
+
+.social-icons .facebook{
+    color: #020c67;
+    box-shadow: 0 0 10px #020c67;
+}
+
+.social-icons .facebook:hover{
+    color: white;
+    background-color: #020c67;
+}
+
+.social-icons .twitter{
+    color: black;
+    box-shadow: 0 0 10px black;
+}
+
+.social-icons .twitter:hover{
+    color: white;
+    background-color: black;
+}
+
+.social-icons .google{
+    color: red;
+    box-shadow: 0 0 10px red;
+}
+
+.social-icons .google:hover{
+    color: white;
+    background-color: red;
+}
+
+@media (max-width:884px){
+    .container .image{
+        display: none;
+    }
+
+    .container form{
+        width: 100%;
+    }
+}
